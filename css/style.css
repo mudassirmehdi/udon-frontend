@@ -29,6 +29,13 @@ section {
     transition: .1s all ease-in-out;
 }
 
+
+.btn-site:hover {
+    background-color: transparent;
+    color: #AB7130;
+    border: 1px solid #AB7130; 
+}
+
 .btn {
     position: relative;
     display: inline-block; 
@@ -92,11 +99,6 @@ section {
     transition: width .1s ease, height .1s ease .1s;
 }
 
-.btn-site:hover {
-    background-color: transparent;
-    color: #AB7130;
-    border: 1px solid #AB7130; 
-}
 
 .hero-main {
     background-image: url('../images/hero-bg-1.png');
@@ -167,6 +169,10 @@ section {
 }
 .hero-main .navbar .navbar-nav .nav-item .nav-link:hover::after { 
     width: 70%;
+}
+
+.hero-main .navbar .navbar-nav .nav-item .nav-link:hover {
+    color: #AB7130 !important;  
 }
 
 .hero-main .hero-main-wrapper {
@@ -300,7 +306,7 @@ section {
 
 .hero-main .box {
     position: absolute;
-    bottom: -10%;
+    bottom: 100px;
     left: 50%;
     transform: translate(-50%, 0);
 }
@@ -308,8 +314,8 @@ section {
 	width: 20px;
 	height: 20px;
   display: block;
-	border-right: 2px solid #fff;
-	border-bottom: 2px solid #fff;
+	border-right: 2px solid #AB7130;
+	border-bottom: 2px solid #AB7130;
 	transform: rotate(45deg);
 	margin: -10px;
 	animation: animate 2s infinite;
@@ -597,6 +603,41 @@ footer .footer-top .footer-column ul li {
     margin-bottom: 16px;
 }
 
+.hero-main .navbar .navbar-nav .nav-item .nav-link {
+    color: #FFF; 
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    margin-right: 32px;
+    position: relative;
+}
+ 
+ 
+footer .footer-top .footer-column ul li a::after {
+    content: '';
+    position: absolute;
+    /* top: 0; */
+    left: 0;
+    right: 0;
+    bottom: -10px;
+    height: 1px;
+    width: 0%; 
+    background-color: #AB7130;
+    transition: all 0.3s ease-in-out;
+}
+
+ 
+
+footer .footer-top .footer-column ul li a:hover::after { 
+    width: 100%;
+}
+
+footer .footer-top .footer-column ul li a:hover {
+    color: #AB7130 !important;  
+} 
+
 footer .footer-top .footer-column ul li a {
     color: var(--fffffff, #FFF);
     font-family: Inter;
@@ -605,6 +646,7 @@ footer .footer-top .footer-column ul li a {
     font-weight: 400;
     line-height: 28px;
     text-decoration: none;
+    position: relative;
 }
 
 footer .footer-bottom {
@@ -620,7 +662,7 @@ footer .footer-bottom p {
     font-style: normal;
     font-weight: 400;
     line-height: 24px; 
-    }
+}
 
 /* Responsive media queries */
 
