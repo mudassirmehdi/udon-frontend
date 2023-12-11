@@ -269,8 +269,7 @@ section {
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
-    line-height: 24px; 
-    
+    line-height: 24px;  
 } 
 
 .hero-main .navbar .search-bar .form-control::placeholder {
@@ -291,8 +290,10 @@ section {
     top: 50%;
     right: 10px;
     transform: translate(-50%, -50%);
+    z-index: 9;
 }
 
+ 
 
 
 .hero-main .navbar .search-bar .icon-search img {
