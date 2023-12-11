@@ -1,3 +1,5 @@
+AOS.init({});
+
 $('.our-dished').slick({
     dots: true, 
     infinite: false, 
@@ -17,15 +19,17 @@ $('.our-dished').slick({
       {
         breakpoint: 600,
         settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          dots: false
         }
       },
       {
         breakpoint: 480,
         settings: {
           slidesToShow: 1,
-          slidesToScroll: 1
+          slidesToScroll: 1,
+          dots: false
         }
       } 
     ]
