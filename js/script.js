@@ -34,3 +34,5 @@ $('.our-dished').slick({
       } 
     ]
   });
+
+  

@@ -114,8 +114,13 @@ section {
     font-size: 75px;
     font-style: normal;
     font-weight: 400;
-    line-height: normal;
+    line-height: normal; 
+    pointer-events: none;
+    clip: auto;
 }
+
+  
+ 
 
 .hero-main .navbar  .navbar-collapse {
     flex-grow: 0;
