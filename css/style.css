@@ -15,7 +15,7 @@ body {
 }
 
 section {
-    overflow-x: hidden !important;
+    overflow: hidden !important;
 }
 
 .btn-site {
@@ -115,8 +115,7 @@ section {
     font-style: normal;
     font-weight: 400;
     line-height: normal; 
-    pointer-events: none;
-    clip: auto;
+    pointer-events: none; 
 }
 
   
@@ -293,6 +292,50 @@ section {
 .hero-main .navbar .search-bar .icon-search img {
     width: 25px;
 } 
+
+.hero-main  {
+    position: relative;
+}
+
+
+.hero-main .box {
+    position: absolute;
+    bottom: -10%;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+.hero-main .box span {
+	width: 20px;
+	height: 20px;
+  display: block;
+	border-right: 2px solid #fff;
+	border-bottom: 2px solid #fff;
+	transform: rotate(45deg);
+	margin: -10px;
+	animation: animate 2s infinite;
+}
+
+.hero-main .box span:nth-child(2) {
+	animation-delay: -0.2s;
+}
+
+.hero-main .box span:nth-child(3) {
+	animation-delay: -0.4s;
+}
+
+@keyframes animate {
+	0% {
+		opacity: 0;
+	}
+	50% {
+		opacity: 1;
+		transform: rotate(45deg) translate(10px, 10px);
+	}
+	100% {
+		opacity: 0;
+	}
+} 
+
 
 .about-us {
     padding: 120px 0;
